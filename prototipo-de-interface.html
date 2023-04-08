@@ -1,24 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>Tela da interface</title>
     <link rel="stylesheet" href="estilo.css" />
-  </head>
-  <body>
+
+</head>
+
+<body>
     <div class="tela-interface">
-      <div class="sistema">
-        <h2>Sistema RADCS</h2>
-        <div class="icone-menu">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="sistema">
+            <h2>Sistema RADCS</h2>
+            <div class="icone-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-      </div>
-      <div class="entrada-caixa">
-        <input type="text" placeholder="Digite aqui" />
-        <button><i class="fa fa-paper-plane"></i>Enviar</button>
-      </div>
+        <div class="entrada-caixa">
+            <input type="text" placeholder="Digite algo..." />
+            <button><i class="fa fa-paper-plane"></i>Enviar</button>
+        </div>
+        <div class="menu">
+            <div class="perfil">
+                <img src="img.jpg" alt="Foto do perfil" />
+            </div>
+            <ul>
+                <li><a href="#">Documentos Criados</a></li>
+                <li><a href="#">Dados do Colaborador</a></li>
+                <li><a href="#">Atualizações de Documentações</a></li>
+                <li><a href="#">Configurações</a></li>
+                <li><a href="#" class="fechar-menu">Sair do Menu</a></li>
+            </ul>
+
+        </div>
+
+
+        <script>
+
+            const menuIcon = document.querySelector(".icone-menu");
+            const menu = document.querySelector(".menu");
+
+            menuIcon.addEventListener("click", () => {
+                menu.classList.toggle("open");
+            });
+
+            const closeMenuLink = document.querySelector(".fecha-menu");
+
+            closeMenuLink.addEventListener("click", () => {
+                const menu = document.querySelector(".menu");
+                menu.classList.remove("open");
+            });
+
+            const menuItems = document.querySelectorAll(".menu ul li a:not(.fechar-menu)");
+
+            menuItems.forEach(item => {
+                item.addEventListener("click", () => {
+                    alert("Essa funcionalidade não está disponível no momento.");
+                });
+            });
+
+
+
+        </script>
     </div>
-  </body>
+</body>
+
 </html>
