@@ -45,6 +45,26 @@
 
 }
 
+.sistema .icone-menu::before,
+.sistema .icone-menu::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.sistema .icone-menu::before {
+    top: -10px;
+  }
+  
+  .sistema .icone-menu::after {
+    bottom: -10px;
+  }
+  
+
+
 .sistema .icone-menu span {
     width: 20px;
     height: 2px;
@@ -124,8 +144,13 @@
     transform: translateX(0);
 }
 
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 1;
+  }
 .menu li {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .menu a {
@@ -144,15 +169,6 @@
 
 }
 
-.fechar-menu {
-    cursor: pointer;
-  }
-.fechar-menu {
-    transform: translateX(-240px);
-}
-
-
-
 
 .perfil {
     text-align: left;
@@ -167,5 +183,38 @@
     margin-right: 10px;
     width: 60px;
     height: 60px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 5px rgba(129, 127, 127, 90);
 }
+
+.nome{
+    font-family: Roboto, sans-serif;
+    margin-top: 2px;
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 1px;
+    color: #000000;
+  }
+  
+  .sobrenome {
+    font-family: Roboto, sans-serif;
+    margin-top: 2px;
+    font-size: 18px;
+    display: inline-block;
+    color: #000000;
+    
+  }
+  
+  .id {
+    font-family: Roboto, sans-serif;
+    margin-top: 10px;
+    font-size: 11px;
+    color: #000000;
+   
+  }
+
+  .separado{
+    background-color: #b1b7ff;
+    color: #fff;
+    width: 100%;
+
+  }

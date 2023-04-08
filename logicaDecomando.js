@@ -14,7 +14,7 @@ closeMenuLink.addEventListener("click", () => {
   menu.classList.remove("open");
 });
 
-const menuItems = document.querySelectorAll(".menu ul li a:not(.fechar-menu)");
+const menuItems = document.querySelectorAll(".menu li a:not(.fecha-menu)");
 
 menuItems.forEach(item => {
   item.addEventListener("click", () => {

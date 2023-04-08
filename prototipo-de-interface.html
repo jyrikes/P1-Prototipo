@@ -23,18 +23,24 @@
             <button><i class="fa fa-paper-plane"></i>Enviar</button>
         </div>
         <div class="menu">
+            <div class="separado">
             <div class="perfil">
-                <img src="img.jpg" alt="Foto do perfil" />
+                <img src="imagem\WhatsApp Image 2023-04-08 at 10.34.01.jpeg" alt="Imagem de perfil">
+                <div class="name">
+                    <div class="nome">João</div>
+                    <div class="sobrenome">Gomes</div>
+                    <div class="id">ID: 12345</div>
+                </div>
+              </div>
             </div>
-            <ul>
+              <ul>
                 <li><a href="#">Documentos Criados</a></li>
                 <li><a href="#">Dados do Colaborador</a></li>
                 <li><a href="#">Atualizações de Documentações</a></li>
                 <li><a href="#">Configurações</a></li>
-                <li><a href="#" class="fechar-menu">Sair do Menu</a></li>
-            </ul>
-
-        </div>
+                <li><a href="#" class="fecha-menu">Sair do Menu</a></li>
+              </ul>
+            </div>
 
 
         <script>
@@ -53,7 +59,7 @@
                 menu.classList.remove("open");
             });
 
-            const menuItems = document.querySelectorAll(".menu ul li a:not(.fechar-menu)");
+            const menuItems = document.querySelectorAll(".menu ul li a:not(.fecha-menu)");
 
             menuItems.forEach(item => {
                 item.addEventListener("click", () => {
