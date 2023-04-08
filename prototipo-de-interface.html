@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Tela da interface</title>
-</head>
-
-<body>
-    <form>
-        <input type="text" placeholder="Digite sua mensagem aqui..." />
-        <button type="submit"><i class="fa fa-paper-plane"></i></button>
-        <label for="file-input"></label>
-        <i class="fa fa-camera"></i>
-        </label>
-        <input id="file-input" type="file" style="display:none">
-    </form>
-</body>
-
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <div class="tela-interface">
+      <div class="sistema">
+        <h2>Sistema RADCS</h2>
+        <div class="icone-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="entrada-caixa">
+        <input type="text" placeholder="Digite aqui" />
+        <button><i class="fa fa-paper-plane"></i>Enviar</button>
+      </div>
+    </div>
+  </body>
 </html>
