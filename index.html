@@ -9,7 +9,7 @@
 </head>
 
 <body>
- 
+
     <div class="tela-interface">
         <section class="sistema">
             <section class="icone-menu">
@@ -17,15 +17,15 @@
                 <span></span>
                 <span></span>
             </section>
-            <div class ="msgInicial"> 
+            <div class="msgInicial">
                 <h2> Boas Vindas ao sistema RADICS</h2>
-                <p> Utilize a barra de comandos para iniciar atividades 
+                <p> Utilize a barra de comandos para iniciar atividades
                     <br>
                     Utlize a barra lateral para monitorar suas atividades
                 </p>
             </div>
             <div id="form-container"></div>
-           
+
             <div class="menu">
                 <div class="separado">
                     <div class="perfil">
@@ -37,7 +37,7 @@
                         </div>
                     </div>
                 </div>
-              
+
                 <ul>
                     <li><a href="#" class="colaborador">Dados do Colaborador</a></li>
                     <li><a href="#" class="documentos">Documentos Criados</a></li>
@@ -51,19 +51,33 @@
                         </a>
                     </li>
                 </ul>
-               
-            </section>
-     
+
+        </section>
+
         <div class="entrada-caixa">
             <input type="text" placeholder="Digite algo..." />
             <button id="enviar"><i class="fa fa-paper-plane"></i>Enviar</button>
         </div>
-        
-        </div>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
-        <script  type="module" src="logicaDecomando.js"></script>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+        integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script type="module" src="logicaDecomando.js"></script>
+    <script>
+        // Seleciona todos os links do menu
+        var links = document.querySelectorAll('.menu a');
+
+        // Adiciona o endereço URL desejado para cada link
+        links[0].href = 'colaborador.html';
+        links[1].href = 'documentosGerados.html';
+        links[2].href = 'atualizacoes-de-documentacoes.html';
+        links[3].href = 'solicitar.html';
+        links[4].href = 'relatorios.html';
+        links[5].href = 'config.html';
+    </script>
     </div>
 </body>
 

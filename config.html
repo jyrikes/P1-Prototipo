@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Configurações - App de Gestão</title>
+    <style>
+        body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+background-color: #f4f8fb;
+}
+button {
+        margin-top: 20px;
+        border: none;
+        background-color: #4285F4;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #3367D6;
+      }
+.configuracoes {
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+background-color: #fff;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header {
+text-align: center;
+}
+
+h1 {
+font-size: 36px;
+margin-bottom: 20px;
+color: #1572e8;
+}
+
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+border-bottom: 1px solid #e1e8ee;
+}
+
+nav ul li {
+margin-right: 20px;
+}
+
+nav ul li:last-child {
+margin-right: 0;
+}
+
+nav ul li a {
+display: block;
+padding: 10px 20px;
+text-decoration: none;
+color: #6d7d8c;
+transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+color: #1572e8;
+}
+
+section {
+padding: 20px;
+}
+
+h2 {
+font-size: 24px;
+margin-bottom: 10px;
+color: #157
+    </style>
+</head>
+<body>
+    <div class="configuracoes">
+        <header>
+            <h1>Configurações</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#tarefas-pre-autorizadas">Tarefas Pré-Autorizadas</a></li>
+                <li><a href="#assinatura-digital">Assinatura Digital</a></li>
+                <li><a href="#configuracoes-do-colaborador">Configurações do Colaborador</a></li>
+                <li><a href="#configuracoes-das-telas">Configurações das Telas</a></li>
+            </ul>
+        </nav>
+        <section id="tarefas-pre-autorizadas">
+            <h2>Tarefas Pré-Autorizadas</h2>
+            <p>Defina aqui as tarefas que serão pré-autorizadas pelos supervisores.</p>
+        </section>
+        <section id="assinatura-digital">
+            <h2>Assinatura Digital</h2>
+            <p>Configure aqui as opções relacionadas à assinatura digital de documentos.</p>
+        </section>
+        <section id="configuracoes-do-colaborador">
+            <h2>Configurações do Colaborador</h2>
+            <p>Personalize aqui as configurações individuais de cada colaborador.</p>
+        </section>
+        <section id="configuracoes-das-telas">
+            <h2>Configurações das Telas</h2>
+            <p>Defina aqui as opções de visualização e personalização das telas do aplicativo.</p>
+        </div>
+        <button onclick="window.history.back();">Voltar</button>
+        </section>
+    </body>
+</html>

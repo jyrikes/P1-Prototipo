@@ -121,29 +121,3 @@ enviar.addEventListener('click', async () => {
   formulario();
   
 });
-const dadosColaboradorTab = document.querySelector(".colaborador");
-
-dadosColaboradorTab.addEventListener("click", () => {
-  const container = document.createElement('div');
-
-  fetch('/colaborador.html')
-    .then(response => response.text())
-    .then(html => {
-      container.innerHTML = html;
-      document.body.appendChild(container);
-      window.location.href = '/colaborador.html';
-    });
-});
-
-const solicitarTab = document.querySelector(".solicitar");
-
-dadosColaboradorTab.addEventListener("click", () => {
- 
-  fetch('solicitar.html')
-    .then(response => response.text())
-    .then(html => {
-      container.innerHTML = html;
-      document.body.appendChild(container);
-      window.location.href = 'solicitar.html';
-    });
-});
