@@ -1,33 +1,47 @@
-.tela-interface {
-    width: 290px;
-    height: 600px;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tela-interface {
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
-    border-radius: 40px;
     overflow: hidden;
     background: #c2c2c2;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     position: relative;
     padding: 10px;
-    border: 10px solid black;
-}
+    border: 10px solid rgba(0, 0, 0, 0.007);
+  }
+  
 
-.sistema {
+  
+.sistema .msgInicial{
     display: flex;
+    flex-direction:column;
     align-items: center;
-    justify-content: space-between;
-    background-color: #030952;
-    color: #fff;
-    height: 40px;
-    padding: 0 10px;
-    border-radius: 15px;
-
+    font-weight: 200px;
+    padding-left: 100px;
 }
+
 
 .sistema h2 {
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
     font-size: 20px;
     text-align: center;
+}
+.msgInicial{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding: 100px;
+ 
+
+ 
 }
 
 .sistema i {
@@ -39,7 +53,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 18px;
+    height: 10px;
     cursor: pointer;
     order: -1;
 
@@ -84,7 +98,7 @@
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%;
+    width: 30%;
 
 }
 
@@ -95,8 +109,8 @@
     font-size: 14px;
     padding: 8px;
     border-radius: 9px;
-    width: 70%;
-    max-width: 150px;
+    width: 50%;
+    max-width: 100%;
 
 }
 
@@ -117,7 +131,7 @@
 }
 
 .tela-interface .entrada-caixa button:hover {
-    background-color: rgb(1, 1, 66);
+    background-color: rgb(25, 17, 143);
 }
 
 .tela-interface .entrada-caixa button i {
@@ -126,13 +140,13 @@
 
 
 .menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 240px;
     height: 100%;
-    background-color: #f0f0f0;
-    color: #000000;
+    background-color: #3b3b3b7a;
+    color: #f1eded;
     z-index: 1;
     transform: translateX(-240px);
     transition: transform 0.3s ease-in-out;
@@ -147,16 +161,20 @@
 .menu ul {
     list-style: none;
     padding: 0;
-    margin: 1;
+    margin: 0;
+    color:white;
   }
 .menu li {
     margin-bottom: 5px;
+    font-family:'Times New Roman', Times, serif;
+    color:white;
+    
 }
 
 .menu a {
-    font-family: 'Roboto', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: block;
-    color: #000;
+    color: #f5f0f0;
     text-decoration: none;
     padding: 5px;
     border-radius: 5px;
@@ -164,8 +182,8 @@
 }
 
 .menu a:hover {
-    background-color: #030952;
-    color: #fff;
+    background-color: #9581ec;
+    color: #fdfdff;
 
 }
 
@@ -206,15 +224,52 @@
   
   .id {
     font-family: Roboto, sans-serif;
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 11px;
-    color: #000000;
+    color: #ffffff;
    
   }
 
   .separado{
-    background-color: #b1b7ff;
-    color: #fff;
+    background-color: rgb(84, 129, 252);
+    color: #f7f3f3;
     width: 100%;
 
   }
+
+  #form-container form {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    width: 50%;
+    align-self: center;
+  
+  }
+  #form-container{
+    display: flex;
+    flex-direction :column;
+    align-items: center;
+    
+    
+  }
+  
+  #form-container form input {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  #form-container form button {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+

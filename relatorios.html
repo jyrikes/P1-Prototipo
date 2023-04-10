@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Relatório de Solicitações</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      body {
+        background-color: #f2f2f2;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        border-radius: 5px;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Relatório de Solicitações</h1>
+      <canvas id="myChart"></canvas>
+      <div style="text-align: center; margin-top: 20px;">
+        <button onclick="window.history.back();">Voltar</button>
+      </div>
+    </div>
+    <script>
+      const labels = ["Compra de Material", "Pagamento de Fornecedores", "Reembolso de Despesas", "Adiantamento de Salário", "Manutenção de Equipamentos"];
+      const data = [500, 1200, 800, 2500, 350];
+      const colors = ["#0077c2", "#00b0ff", "#33bfff", "#66d9ff", "#99e6ff"];
+      const chartData = {
+        labels: labels,
+        datasets: [{
+          data: data,
+          backgroundColor: colors,
+          borderWidth: 1
+        }]
+      };
+      const chartConfig = {
+        type: 'bar',
+        data: chartData,
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      };
+      const myChart = new Chart(document.getElementById('myChart'), chartConfig);
+    </script>
+  </body>
+</html>
